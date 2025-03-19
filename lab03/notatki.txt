@@ -1,0 +1,92 @@
+Wyjaśnienie:
+Drzewo decyzyjne:
+
+Wyświetlamy drzewo w formie tekstowej i graficznej, aby zobaczyć, jak model podejmuje decyzje.
+
+Ewaluacja:
+
+Sprawdzamy dokładność modelu na zbiorze testowym za pomocą score.
+
+Macierz błędów:
+
+Pokazuje, ile razy model poprawnie i błędnie sklasyfikował każdą z klas.
+
+Porównanie:
+
+Porównujemy dokładność drzewa decyzyjnego z Twoim ręcznym klasyfikatorem.
+
+
+
+1. Drzewo decyzyjne w formie tekstowej
+Drzewo decyzyjne pokazuje, jak model podejmuje decyzje dotyczące klasyfikacji irysów na podstawie ich cech (np. petal.length, petal.width, sepal.length).
+
+Struktura drzewa:
+
+Każdy węzeł (linia zaczynająca się od |---) reprezentuje decyzję opartą na wartości jednej z cech (np. petal.length <= 2.70).
+
+Jeśli warunek jest spełniony, przechodzimy do lewej gałęzi, w przeciwnym razie do prawej.
+
+Liście (linie kończące się na class: ...) wskazują przewidywaną klasę (np. Setosa, Versicolor, Virginica).
+
+Przykład interpretacji:
+
+Jeśli petal.length <= 2.70, model klasyfikuje irysa jako Setosa.
+
+Jeśli petal.length > 2.70 i petal.width <= 1.75, model sprawdza kolejne warunki, np. petal.length <= 4.95, aby zdecydować między Versicolor a Virginica.
+
+Znaczenie:
+
+Drzewo pokazuje, które cechy są najważniejsze dla klasyfikacji (np. petal.length i petal.width).
+
+Im wyżej w drzewie znajduje się cecha, tym większy ma wpływ na decyzje modelu.
+
+2. Macierz błędów (confusion matrix)
+Macierz błędów pokazuje, jak dobrze model poradził sobie z klasyfikacją każdej z klas.
+
+Struktura macierzy:
+
+Copy
+[[17  0  0]
+ [ 0 14  1]
+ [ 0  0 13]]
+Wiersze reprezentują prawdziwe klasy.
+
+Kolumny reprezentują przewidywane klasy.
+
+Liczby na przekątnej (np. 17, 14, 13) oznaczają poprawne klasyfikacje.
+
+Liczby poza przekątną oznaczają błędy.
+
+Interpretacja:
+
+Setosa: 17 poprawnych klasyfikacji, 0 błędów.
+
+Model doskonale rozpoznał wszystkie irysy Setosa.
+
+Versicolor: 14 poprawnych klasyfikacji, 1 błąd.
+
+Model pomylił 1 irysa Versicolor z Virginica.
+
+Virginica: 13 poprawnych klasyfikacji, 0 błędów.
+
+Model doskonale rozpoznał wszystkie irysy Virginica.
+
+Podsumowanie:
+
+Model radzi sobie bardzo dobrze, zwłaszcza z klasami Setosa i Virginica.
+
+Jedyny błąd dotyczy klasyfikacji jednego irysa Versicolor jako Virginica.
+
+3. Wnioski
+Drzewo decyzyjne:
+
+Najważniejsze cechy to petal.length i petal.width.
+
+Model używa tych cech do podziału danych na klasy.
+
+Macierz błędów:
+
+Model ma wysoką dokładność (prawie 100% dla Setosa i Virginica).
+
+Jedyny błąd dotyczy klasy Versicolor, co może wynikać z nakładających się wartości cech dla tej klasy.
+
