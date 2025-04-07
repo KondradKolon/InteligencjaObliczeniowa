@@ -1,0 +1,268 @@
+zad.1
+Path found with 21 steps
+Move sequence: Right, Right, Down, Right, Right, Up, Right, Right, Down, Down, Right, Right, Right, Down, Down, Left, Down, Down, Right, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █ · · · █     █
+█ █ █ · · · █ · █ █   █
+█       █   █ · · · · █
+█   █   █ █     █ █ · █
+█     █ █       █ · · █
+█           █     · █ █
+█   █     █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █ · █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 26 steps
+Move sequence: Right, Right, Down, Down, Left, Left, Down, Down, Right, Down, Right, Right, Right, Up, Right, Up, Right, Down, Down, Right, Right, Down, Right, Down, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █       █     █
+█ █ █ ·     █   █ █   █
+█ · · · █   █         █
+█ · █   █ █ · · █ █   █
+█ · · █ █ · · · █     █
+█   · · · · █ · · · █ █
+█   █     █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █ · █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 26 steps
+Move sequence: Right, Right, Down, Down, Left, Left, Down, Down, Right, Down, Right, Down, Right, Up, Right, Up, Right, Right, Down, Right, Right, Down, Right, Down, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █       █     █
+█ █ █ ·     █   █ █   █
+█ · · · █   █         █
+█ · █   █ █     █ █   █
+█ · · █ █ · · · █     █
+█   · · · · █ · · · █ █
+█   █ · · █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █ · █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+Traceback (most recent call last):
+  File "C:\Users\grzeg\InteligencjaObliczeniowa-1\lab06\zad03.py", line 95, in <module>
+    ga_instance.run()
+  File "C:\Users\grzeg\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pygad\pygad.py", 
+line 1940, in run
+    self.run_mutation()
+  File "C:\Users\grzeg\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pygad\pygad.py", 
+line 2278, in run_mutation
+    self.last_generation_offspring_mutation = self.mutation(self.last_generation_offspring_crossover)
+  File "C:\Users\grzeg\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pygad\utils\mutation.py", line 40, in random_mutation
+    offspring = self.mutation_probs_by_space(offspring)
+  File "C:\Users\grzeg\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pygad\utils\mutation.py", line 273, in mutation_probs_by_space
+    value_from_space = random.choice(values_to_select_from)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\random.py", line 378, in choice
+    return seq[self._randbelow(len(seq))]
+KeyboardInterrupt
+
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 22 steps
+Move sequence: Right, Right, Down, Right, Right, Up, Right, Right, Down, Down, Right, Right, Right, Down, Down, Left, Down, Down, Right, Down, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █ · · · █     █
+█ █ █ · · · █ · █ █   █
+█       █   █ · · · · █
+█   █   █ █     █ █ · █
+█     █ █       █ · · █
+█           █     · █ █
+█   █     █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █ · █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 20 steps
+Move sequence: Right, Right, Down, Right, Right, Up, Right, Right, Down, Down, Down, Down, Down, Right, Right, Down, Right, Down, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █ · · · █     █
+█ █ █ · · · █ · █ █   █
+█       █   █ ·       █
+█   █   █ █   · █ █   █
+█     █ █     · █     █
+█           █ · · · █ █
+█   █     █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █ · █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 34 steps
+Move sequence: Right, Right, Down, Down, Left, Left, Down, Down, Down, Right, Right, Down, Right, Up, Right, Up, Right, Right, Down, Right, Right, Up, Right, Up, Up, Left, Left, Left, Up, Up, Left, Left, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █ · · · █     █
+█ █ █ ·   · █ · █ █   █
+█ · · · █ · █ · · · · █
+█ · █   █ █     █ █ · █
+█ ·   █ █ · · · █ · · █
+█ · · · · · █ · · · █ █
+█   █ · · █ █   █     █
+█   █ █ █       █ █   █
+█   █   █ █   █   █   █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 30 steps
+Move sequence: Right, Right, Down, Down, Left, Left, Down, Down, Down, Right, Right, Right, Right, Up, Right, Right, Up, Up, Right, Right, Right, Down, Down, Left, 
+Down, Down, Right, Down, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █       █     █
+█ █ █ ·     █   █ █   █
+█ · · · █   █ · · · · █
+█ · █   █ █   · █ █ · █
+█ ·   █ █ · · · █ · · █
+█ · · · · · █     · █ █
+█   █     █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █ · █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 32 steps
+Move sequence: Right, Right, Down, Down, Left, Left, Down, Down, Down, Right, Right, Down, Right, Up, Right, Up, Right, Right, Up, Up, Right, Right, Right, Down, Down, Left, Down, Down, Right, Down, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █       █     █
+█ █ █ ·     █   █ █   █
+█ · · · █   █ · · · · █
+█ · █   █ █   · █ █ · █
+█ ·   █ █ · · · █ · · █
+█ · · · · · █     · █ █
+█   █ · · █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █ · █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 26 steps
+Move sequence: Right, Right, Down, Down, Left, Left, Down, Down, Right, Down, Right, Down, Right, Up, Right, Up, Right, Right, Down, Right, Right, Down, Right, Down, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █       █     █
+█ █ █ ·     █   █ █   █
+█ · · · █   █         █
+█ · █   █ █     █ █   █
+█ · · █ █ · · · █     █
+█   · · · · █ · · · █ █
+█   █ · · █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █ · █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 24 steps
+Move sequence: Right, Right, Down, Down, Left, Left, Down, Down, Down, Right, Right, Right, Right, Up, Right, Right, Down, Right, Right, Down, Right, Down, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █       █     █
+█ █ █ ·     █   █ █   █
+█ · · · █   █         █
+█ · █   █ █     █ █   █
+█ ·   █ █ · · · █     █
+█ · · · · · █ · · · █ █
+█   █     █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █ · █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 22 steps
+Move sequence: Right, Right, Down, Right, Right, Up, Right, Right, Down, Down, Down, Left, Down, Right, Down, Right, Right, Down, Right, Down, Down, Down
+
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █ · · · █     █
+█ █ █ · · · █ · █ █   █
+█       █   █ ·       █
+█   █   █ █ · · █ █   █
+█     █ █   · · █     █
+█           █ · · · █ █
+█   █     █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █ · █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
+
+grzeg@DESKTOP-ABFJ830 MINGW64 ~/InteligencjaObliczeniowa-1/lab06 (main)
+$ python zad03.py 
+
+--- Maze Solution ---
+Path found with 24 steps
+Move sequence: Right, Right, Down, Down, Left, Left, Down, Down, Down, Right, Right, Right, Right, Up, Right, Up, Right, Down, Down, Right, Right, Down, Right, Down
+Maze Visualization:
+█ █ █ █ █ █ █ █ █ █ █ █
+█ S · · █       █     █
+█ █ █ ·     █   █ █   █
+█ · · · █   █         █
+█ · █   █ █ · · █ █   █
+█ ·   █ █ · · · █     █
+█ · · · · · █ · · · █ █
+█   █     █ █   █ · · █
+█   █ █ █       █ █ · █
+█   █   █ █   █   █   █
+█   █               E █
+█ █ █ █ █ █ █ █ █ █ █ █
